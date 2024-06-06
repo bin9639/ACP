@@ -13,7 +13,7 @@ export default function Home() {
               Các khóa học
             </a>
             <a href="/infor" className="ml-4 text-gray-600 hover:text-gray-900">
-              Về chúng tôi
+              Về chúng tôi asdsadas
             </a>
             <a href="/contact" className="ml-4 text-gray-600 hover:text-gray-900">
               Liên hệ
