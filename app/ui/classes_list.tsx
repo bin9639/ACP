@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef, useState } from "react";
+import React, { useEffect,useRef, useState } from "react";
 
 export default function Classes_list() {
     const [Open, setOpen] = useState(false);
@@ -13,11 +13,23 @@ export default function Classes_list() {
     const menuRef = useRef();
     const titleRef = useRef();  
 
-    window.addEventListener('click', (e) => {
-        if (e.target !== menuRef.current && e.target !== titleRef.current) {
-            setOpen(false);
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+            if (menuRef.current && !menuRef.current.contains(e.target) && titleRef.current && !titleRef.current.contains(e.target)) {
+                setOpen(false);
+            }
+        };
+
+        if (typeof window !== 'undefined') {
+            window.addEventListener('click', handleClickOutside);
         }
-    });
+
+        return () => {
+            if (typeof window !== 'undefined') {
+                window.removeEventListener('click', handleClickOutside);
+            }
+        };
+    }, []);
 
     return (
         <div className=" ml-32 text-black-600 hover:text-gray-900 text-2xl ">
