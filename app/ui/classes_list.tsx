@@ -10,8 +10,8 @@ export default function Classes_list() {
         { name: 'Advanced B', code: 'D', href: 'https://forms.gle/DQnreTsCfzqWejiM8' }
     ];
 
-    const menuRef = useRef<HTMLAnchorElement>(null);
-    const titleRef = useRef<HTMLAnchorElement>(null);
+    const menuRef = useRef<HTMLDivElement>(null);
+    const titleRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {
