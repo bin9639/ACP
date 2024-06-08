@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect,useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function Classes_list() {
     const [Open, setOpen] = useState(false);
@@ -14,7 +14,7 @@ export default function Classes_list() {
     const titleRef = useRef();  
 
     useEffect(() => {
-        const handleClickOutside = (e) => {
+        const handleClickOutside = (e: MouseEvent) => {
             if (menuRef.current && !menuRef.current.contains(e.target) && titleRef.current && !titleRef.current.contains(e.target)) {
                 setOpen(false);
             }
