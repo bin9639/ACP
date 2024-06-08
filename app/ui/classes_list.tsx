@@ -15,15 +15,15 @@ export default function Classes_list() {
 
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {
-            if (menuRef.current && !menuRef.current.contains(e.target) && titleRef.current && !titleRef.current.contains(e.target)) {
+            if (menuRef.current && !menuRef.current.contains(e.target as Node) && titleRef.current && !titleRef.current.contains(e.target as Node)) {
                 setOpen(false);
             }
         };
-
+    
         if (typeof window !== 'undefined') {
             window.addEventListener('click', handleClickOutside);
         }
-
+    
         return () => {
             if (typeof window !== 'undefined') {
                 window.removeEventListener('click', handleClickOutside);
