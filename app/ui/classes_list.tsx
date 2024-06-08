@@ -7,11 +7,11 @@ export default function Classes_list() {
         { name: 'Basic A', code: 'A', href: 'https://forms.gle/FiV98FoNHXNK6fCV7' },
         { name: 'Basic B', code: 'B', href: 'https://forms.gle/a94qAQFnXH8Cp7DN7' },
         { name: 'Advanced A', code: 'C', href: 'https://forms.gle/F1EecVqP328ALMPv6' },
-        { name: 'Advanced', code: 'D', href: 'https://forms.gle/DQnreTsCfzqWejiM8' }
+        { name: 'Advanced B', code: 'D', href: 'https://forms.gle/DQnreTsCfzqWejiM8' }
     ];
 
-    const menuRef = useRef<HTMLElement>(null);
-    const titleRef = useRef<HTMLElement>(null);
+    const menuRef = useRef<HTMLAnchorElement>(null);
+    const titleRef = useRef<HTMLAnchorElement>(null);
 
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {
