@@ -12,16 +12,15 @@ export default function Head(){
               />
             </a>
             <div className="flex items-center justify-center w-full">
-              <a href="/" className="text-black-600 hover:text-gray-900 text-2xl">
+              <a href="/" className="nav-link text-2xl">
                 Trang chủ
               </a>
-              
-              <Classes_list ml-32/>
-            
-              <a href="/infor" className="ml-32 text-black-600 hover:text-gray-900 text-2xl">
-                Về chúng tôi 
+              <Classes_list />
+
+              <a href="/infor" className="nav-link ml-32 text-2xl">
+                Về chúng tôi  
               </a>
-              <a href="/contact" className="ml-32 text-black-600 hover:text-gray-900 text-2xl">
+              <a href="/contact" className="nav-link ml-32 text-2xl">
                 Liên hệ
               </a>
             </div>

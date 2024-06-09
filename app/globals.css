@@ -35,3 +35,14 @@ body {
 .text-balance{
   color: #e7f0d3;
 }
+
+.nav-link {
+  color: #000;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: green;
+}

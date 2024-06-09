@@ -33,11 +33,11 @@ export default function Classes_list() {
 
     return (
         <div className="ml-32 text-black-600 hover:text-gray-900 text-2xl">
-            <div className="flex items-center" onClick={() => setOpen(!Open)}>
-                <a ref={titleRef}>
+            <div className="nav-link flex items-center" onClick={() => setOpen(!Open)}>
+                <a className="" ref={titleRef}>
                     Các khóa học
                 </a>
-                <img src="/arrow-down.png" alt="arrow-down" className="w-4 h-4 rounded-full ml-2" />
+                <img src="/arrow-down.png" alt="arrow-down" className="nav-link w-4 h-4 rounded-full ml-2" />
             </div>
             {Open && <div ref={menuRef} className="bg-gray-200 p-4 w-60 shadow-lg absolute rounded-md">
                 <ul>
