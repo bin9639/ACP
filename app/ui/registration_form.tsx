@@ -5,14 +5,14 @@ export default function RegistrationForm() {
     const [formStatus, setFormStatus] = useState();
     const [formData, setFormData] = useState({});
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e: any) => {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
         });
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
         setFormStatus('loading');
         console.log(formData);
