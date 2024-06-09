@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 export default function RegistrationForm() {
-    const [formStatus, setFormStatus] = useState();
+    const [formStatus, setFormStatus] = useState<string | undefined>();
     const [formData, setFormData] = useState({});
 
     const handleInputChange = (e: any) => {
