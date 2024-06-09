@@ -1,7 +1,7 @@
 
 import Image from "next/image";    
-import Head from "@/app/ui/head.tsx";   
-import Contact_link from "@/app/ui/contact.tsx";
+import Head from "@/app/ui/head";   
+import Contact_link from "@/app/ui/contact";
 
 export default function Home() {
     return (
