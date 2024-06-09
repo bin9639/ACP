@@ -47,9 +47,9 @@ export default function RegistrationForm() {
             <input className="rounded-md" type="text" name="class" onChange={handleInputChange} style={{fontSize: '18px', width: '100%'}} />
         </div>
         <div className="mb-2">
-    <label style={{fontSize: '18px', display: 'block'}}>Bạn muốn nhắn gửi gì đến chúng mình không:</label>
-    <textarea className="rounded-md" name="message" onChange={handleInputChange} onFocus={(e) => e.target.setSelectionRange(0, 0)} style={{fontSize: '18px', width: '100%', height: '100px'}} />
-</div>
+            <label style={{fontSize: '18px', display: 'block'}}>Bạn muốn nhắn gửi gì đến chúng mình không:</label>
+            <textarea className="rounded-md" name="message" onChange={handleInputChange} onFocus={(e) => e.target.setSelectionRange(0, 0)} style={{fontSize: '18px', width: '100%', height: '100px'}} />
+        </div>
         <button type="submit" style={{backgroundColor: '#007BFF', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '18px'}}>Submit</button>
         {formStatus === 'loading' && <p>Loading...</p>}
         {formStatus === 'success' && <p>Success!</p>}
