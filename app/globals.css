@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
+  --background-start-rgb: 84, 135, 122;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -32,6 +32,6 @@ body {
   }
 }
 
-.dropDownProfile {
-    position: absolute;
+.text-balance{
+  color: #e7f0d3;
 }
